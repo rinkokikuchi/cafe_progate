@@ -18,11 +18,6 @@
             <h5>メニュー４品</h5>
         </div>
 
-
-
-
-
-
     </header>
 
     <div class = "main">
