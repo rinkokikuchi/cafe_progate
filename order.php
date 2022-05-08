@@ -6,6 +6,7 @@
     <title>注文内容確認</title>
 </head>
     <body>
+        test
     <div class = "oll">
         <h1>注文内容確認</h1>
         <div class = "order">
