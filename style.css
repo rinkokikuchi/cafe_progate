@@ -1,8 +1,11 @@
 .title_name{
     color :#42c7c1;
     font-family :"Pacifico", sans-serif;
-    border-bottom: 5px solid;
-    border-top: 5px solid;
+    display:inline-block;
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 
@@ -17,4 +20,8 @@
 .btn{
     background-color :#42c7c1;
     color :#fff;
+}
+
+.menu{
+    justify-content: center;
 }
