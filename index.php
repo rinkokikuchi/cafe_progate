@@ -14,8 +14,8 @@
 <body>
     <header>
         <div class = "title">
-            <p class = "title_name">cafe progate</p>
-            <h5>メニュー４品</h5>
+            <h2 class = "title_name">Cafe Progate</h2>
+            <h6>メニュー４品</h6>
         </div>
 
 

@@ -1,6 +1,13 @@
 .title_name{
     color :#42c7c1;
     font-family :"Pacifico", sans-serif;
+    border-bottom: 5px solid;
+    border-top: 5px solid;
+}
+
+
+.title h6{
+    color :#c0c0c0;
 }
 
 .menu h3{
