@@ -21,44 +21,45 @@
         </header>
 
         <div class = "main">
-            <div class = "menu">
-                <img src = "img/juice.jpg">
-                <h3>JUICE</h3>
-                <h5>アイス</h5>
-                <p>¥648（税込み）</p>
-                <input>
+            <div class = "menu_juice">
+                <img src = "img/juice.jpg" class = "menu_jpg">
+                <h5>JUICE</h5>
+                <h6>アイス</h6>
+                <p>¥648（税込）</p>
+                <input type ="text" class ="num" value ="0">
                 <p>個</p>
             </div>
-            <div class = "menu">
-                <img src = "img/coffee.jpg">
-                <h3>COFFEE</h3>
-                <h5>ホット</h5>
-                <p>¥540（税込み）</p>
-                <input>
+            <div class = "menu_coffee">
+                <img src = "img/coffee.jpg" class = "menu_jpg">
+                <h5>COFFEE</h5>
+                <h6>ホット</h6>
+                <p>¥540（税込）</p>
+                <input type ="text" class ="num" value ="0">
                 <p>個</p>
             </div>
-            <div class = "menu">
-                <img src = "img/curry.jpg">
-                <h3>CURRY</h3>
-                <img src = "img/chilli.png">
-                <img src = "img/chilli.png">
-                <img src = "img/chilli.png">
-                <p>¥972（税込み）</p>
-                <input>
+            <div class = "menu_curry">
+                <img src = "img/curry.jpg" class = "menu_jpg">
+                <h5>CURRY</h5>
+                <img src = "img/chilli.png" class="chilli">
+                <img src = "img/chilli.png" class="chilli">
+                <img src = "img/chilli.png" class="chilli">
+                <p>¥972（税込）</p>
+                <input type ="text" class ="num" value ="0">
                 <p>個</p>
             </div>
-            <div class = "menu">
-                <img src = "img/pasta.jpg">
-                <h3>PASTA</h3>
-                <img src = "img/chilli.png">
-                <img src = "img/chilli.png">
-                <p>¥1296（税込み）</p>
-                <input>
+            <div class = "menu_pasta">
+                <img src = "img/pasta.jpg" class = "menu_jpg">
+                <h5>PASTA</h5>
+                <img src = "img/chilli.png" class="chilli">
+                <img src = "img/chilli.png" class="chilli">
+                <p>¥1296（税込）</p>
+                <input type ="text" class ="num" value ="0">
                 <p>個</p>
             </div>
+        </div>
+        <div class = "menus">
             <div class = "order_btn">
             <input type = "submit" value = "注文する" class = "btn">
-            </div>
         </div>
     </body>
 </html>
