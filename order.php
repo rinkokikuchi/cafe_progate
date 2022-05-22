@@ -6,7 +6,7 @@
     <title>注文内容確認</title>
 </head>
     <body>
-    <div class = "oll">
+    <div class = "all">
         <h1>注文内容確認</h1>
         <div class = "order">
             <p class = "menu">JUICE×0個</p>

@@ -9,15 +9,15 @@
 }
 
 
-.title h6{
+.title h6 {
     color :#c0c0c0;
 }
 
-.menu h3{
+.menu h3 {
     color :#42c7c1;
 }
 
-.btn{
+.btn {
     background-color :#42c7c1;
     color :#fff;
 }
@@ -25,3 +25,4 @@
 .menu{
     justify-content: center;
 }
+
