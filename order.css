@@ -3,13 +3,14 @@
 }
 
 .all {
-    flex-wrap: wrap;
-    display: flex;
-    text-align: center;
     width: 500px;
-    background-color: #89949e;
+    background-color: #F8F8F8;
+    text-align: center;
+
  }
 
  .order {
-     display: flex;
+     text-align: center;
  }
+
+
