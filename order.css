@@ -1,3 +1,15 @@
 .sum_price {
     color :#42c7c1;
 }
+
+.all {
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    width: 500px;
+    background-color: #89949e;
+ }
+
+ .order {
+     display: flex;
+ }
