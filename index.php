@@ -20,53 +20,55 @@
 
         </header>
 
-        <div class = "main">
-            <div class = "menu_juice">
-                <img src = "img/juice.jpg" class = "menu_jpg">
-                <h4>JUICE</h4>
-                <h6>アイス</h6>
-                <p class = "price">¥648（税込）</p>
-                <div class="quantity">
-                    <input type ="text" class ="num" value ="0">
-                    <p >個</p>
+        <form action="order.php" method="get">
+            <div class = "main">
+                <div class = "menu_juice">
+                    <img src = "img/juice.jpg" class = "menu_jpg">
+                    <h4>JUICE</h4>
+                    <h6>アイス</h6>
+                    <p class = "price">¥648（税込）</p>
+                    <div class="quantity">
+                        <input type ="number" class ="num" value ="0" min="0" name="juice">
+                        <p >個</p>
+                    </div>
+                </div>
+                <div class = "menu_coffee">
+                    <img src = "img/coffee.jpg" class = "menu_jpg">
+                    <h4>COFFEE</h4>
+                    <h6>ホット</h6>
+                    <p class = "price">¥540（税込）</p>
+                    <div class="quantity">
+                        <input type ="number" class ="num" value ="0" min="0" name="coffee">
+                        <p >個</p>
+                    </div>
+                </div>
+                <div class = "menu_curry">
+                    <img src = "img/curry.jpg" class = "menu_jpg">
+                    <h4>CURRY</h4>
+                    <img src = "img/chilli.png" class="chilli">
+                    <img src = "img/chilli.png" class="chilli">
+                    <img src = "img/chilli.png" class="chilli">
+                    <p class = "price">¥972（税込）</p>
+                    <div class="quantity">
+                        <input type ="number" class ="num" value ="0" min="0" name="curry">
+                        <p >個</p>
+                    </div>
+                </div>
+                <div class = "menu_pasta">
+                    <img src = "img/pasta.jpg" class = "menu_jpg">
+                    <h4>PASTA</h4>
+                    <img src = "img/chilli.png" class="chilli">
+                    <p class = "price">¥1296（税込）</p>
+                    <div class="quantity">
+                        <input type ="number" class ="num" value ="0" min="0" name="pasta">
+                        <p >個</p>
+                        </div>
                 </div>
             </div>
-            <div class = "menu_coffee">
-                <img src = "img/coffee.jpg" class = "menu_jpg">
-                <h4>COFFEE</h4>
-                <h6>ホット</h6>
-                <p class = "price">¥540（税込）</p>
-                <div class="quantity">
-                    <input type ="text" class ="num" value ="0">
-                    <p >個</p>
-                </div>
+            <div class = "menus">
+                <div class = "order_btn">
+                <input  type = "submit" class = "btn" value="注文する">
             </div>
-            <div class = "menu_curry">
-                <img src = "img/curry.jpg" class = "menu_jpg">
-                <h4>CURRY</h4>
-                <img src = "img/chilli.png" class="chilli">
-                <img src = "img/chilli.png" class="chilli">
-                <img src = "img/chilli.png" class="chilli">
-                <p class = "price">¥972（税込）</p>
-                <div class="quantity">
-                    <input type ="text" class ="num" value ="0">
-                    <p >個</p>
-                </div>
-            </div>
-            <div class = "menu_pasta">
-                <img src = "img/pasta.jpg" class = "menu_jpg">
-                <h4>PASTA</h4>
-                <img src = "img/chilli.png" class="chilli">
-                <p class = "price">¥1296（税込）</p>
-                <div class="quantity">
-                    <input type ="text" class ="num" value ="0">
-                    <p >個</p>
-                </div>
-            </div>
-        </div>
-        <div class = "menus">
-            <div class = "order_btn">
-            <button  type = "submit" class = "btn">注文する</button>
-        </div>
+        </form>
     </body>
 </html>
