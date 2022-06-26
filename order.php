@@ -1,15 +1,22 @@
 <?php
+    require_once "menu.php";
+
     $juice_num = $_GET["juice"];
     $coffee_num = $_GET["coffee"];
     $curry_num = $_GET["curry"];
     $pasta_num = $_GET["pasta"];
 
-    $juice_price = $juice_num*648;
-    $coffee_price = $coffee_num*540;
-    $curry_price= $curry_num*972;
-    $pasta_price = $pasta_num*1296;
+    $juice = new Menu("JUICE", 648, $juice_num);
+    $coffee = new Menu("COFFEE", 540, $coffee_num);
+    $curry = new Menu("CURRY", 972, $curry_num);
+    $pasta = new Menu("PASTA", 1296, $pasta_num);
 
-    $sum_price = $juice_price+$coffee_price+$curry_price+$pasta_price;
+    $menus = [$juice, $coffee, $curry, $pasta];
+
+    $sum_price = 0;
+    foreach($menus as $menu) {
+        $sum_price += $menu->get_total_price;
+    }
 ?>
 
 <DOCTYPE html>
@@ -29,23 +36,13 @@
                     <h1>注文内容確認</h1>
                 </div>
                 <div class = order-container>
-                    <div class = "order">
-                        <p class = "menu">JUICE×<?php echo $juice_num;?>個</p>
-                        <p class= "price"><?php echo $juice_price;?>円</p>
-                    </div>
-                    <div class = "order">
-                        <p class = "menu">COFFEE×<?php echo $coffee_num;?>個</p>
-                        <p class= "price"><?php echo $coffee_price;?>円</p>
-                    </div>
-                    <div class = "order">
-                        <p class = "menu">CURRY×<?php echo $curry_num;?>個</p>
-                        <p class= "price"><?php echo $curry_price;?>円</p>
-                    </div>
-                    <div class = "order">
-                        <p class = "menu">PASTA×<?php echo $pasta_num;?>個</p>
-                        <p class= "price"><?php echo $pasta_price;?>円</p>
-                    </div>
-                    </div>
+                    <?php foreach($menus as $menu) { ?>
+                        <div class = "order">
+                            <p class="menu"> <?php echo $menu->name ."×". $menu->order_num ;?>個</p>
+                            <p class="price"><?php echo $menu->get_total_price() ;?>円</p>
+                        </div>
+                    <?php } ?>
+                </div>
                 <div class = "sum_price">
                     <h1>合計金額: <?php echo $sum_price;?>円</h1>
                 </div>
