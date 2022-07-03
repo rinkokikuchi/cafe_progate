@@ -1,0 +1,7 @@
+テーブル名：メニュー　menus
+商品名：name(str)
+値段：price(int)
+画像：img(str)
+辛さ：chilli_level(int)
+ホットかアイス：ice(boolean)
+

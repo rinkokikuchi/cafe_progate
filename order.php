@@ -15,7 +15,7 @@
 
     $sum_price = 0;
     foreach($menus as $menu) {
-        $sum_price += $menu->get_total_price;
+        $sum_price += $menu->get_total_price();
     }
 ?>
 
@@ -36,12 +36,9 @@
                     <h1>注文内容確認</h1>
                 </div>
                 <div class = order-container>
-                    <?php foreach($menus as $menu) { ?>
-                        <div class = "order">
-                            <p class="menu"> <?php echo $menu->name ."×". $menu->order_num ;?>個</p>
-                            <p class="price"><?php echo $menu->get_total_price() ;?>円</p>
-                        </div>
-                    <?php } ?>
+                    <?php foreach($menus as $menu) {
+                        echo $menu->get_html();
+                    } ?>
                 </div>
                 <div class = "sum_price">
                     <h1>合計金額: <?php echo $sum_price;?>円</h1>

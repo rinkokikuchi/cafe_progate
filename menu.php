@@ -15,6 +15,17 @@ class Menu {
     public function get_total_price() {
         return $this->price * $this->order_num;
     }
+
+    public function get_html_hello() {
+        return "<h1>Hello</h1>";
+    }
+    
+    public function get_html(){
+        return "<div class = 'order'>".
+            "<p class='menu'>".$this->name ."×". $this->order_num."個</p>".
+            "<p class='price'>".$this->get_total_price()."円</p>".
+            "</div>";
+    }
 }
 
 ?>
