@@ -26,6 +26,7 @@ class Menu {
             "<p class='price'>".$this->get_total_price()."円</p>".
             "</div>";
     }
+
 }
 
 ?>
