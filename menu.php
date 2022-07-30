@@ -1,4 +1,5 @@
 <?php
+require_once "order.php";
 
 class Menu {
     // インスタンス変数
@@ -27,6 +28,30 @@ class Menu {
             "</div>";
     }
 
+    public function get_menus(){
+    return "<div class = '$menu_array'>".
+    $menu_count = count($menus);
+
+    for($data=0; $data<$menu_count; $data++){
+        "<img src = '<?php echo $menus_array[$data][2]; ?>" class = "menu_jpg'">.
+        " <h4><?php echo $menus_array[$data][0]; ?></h4>".
+        if([$data][4] === 'NULL'){
+            <?php for($i=0; $i<$menus_array[2][3]; $i++){echo "<img src = 'img/chilli.png' class='chilli'>" ;} ?>
+        }elseif([$data][4] === 0){
+            echo "<h6>アイス</h6>";
+        }else{echo"<h6>ホット<h6>";}
+        <p class = "price">¥<?php echo $menus_array[$data][1]; ?>（税込）</p>
+        <div class="quantity">
+            <input type ="number" class ="num" value ="0" min="0" name="juice">
+    }
+        <p >個</p>
+    </div>
+</div>
+
+    }
 }
 
+$data = 0;
+
+2.0.3.1
 ?>

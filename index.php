@@ -1,5 +1,5 @@
 <?php
-$client = new mysqli("localhost", "root", "", "cafe_progate");
+$client = new mysqli("localhost", "root", "", "cafe");
 $sql = "SELECT * FROM menus";
 $result = $client->query($sql);
 $menus_array = $result->fetch_all();
@@ -29,45 +29,47 @@ var_dump($menus_array);
 
         </header>
 
+
         <form action="order.php" method="get">
             <div class = "main">
                 <div class = "menu_juice">
-                    <img src = "<?php echo $menus_array[0][3]; ?>" class = "menu_jpg">
-                    <h4><?php echo $menus_array[0][1]; ?></h4>
+                    <img src = "<?php echo $menus_array[0][2]; ?>" class = "menu_jpg">
+                    <h4><?php echo $menus_array[0][0]; ?></h4>
                     <h6>アイス</h6>
-                    <?php for($i=0; $i<$menus_array[0][4]; $i++){echo "<img src = 'img/chilli.png' class='chilli'>" ;} ?>
-                    <p class = "price">¥<?php echo $menus_array[0][2]; ?>（税込）</p>
+                    <?php for($i=0; $i<$menus_array[0][3]; $i++){echo "<img src = 'img/chilli.png' class='chilli'>" ;} ?>
+                    <p class = "price">¥<?php echo $menus_array[0][1]; ?>（税込）</p>
                     <div class="quantity">
                         <input type ="number" class ="num" value ="0" min="0" name="juice">
                         <p >個</p>
                     </div>
                 </div>
+                
                 <div class = "menu_coffee">
-                    <img src = "<?php echo $menus_array[1][3]; ?>" class = "menu_jpg">
-                    <h4><?php echo $menus_array[1][1]; ?></h4>
+                    <img src = "<?php echo $menus_array[1][2]; ?>" class = "menu_jpg">
+                    <h4><?php echo $menus_array[1][0]; ?></h4>
                     <h6>ホット</h6>
-                    <?php for($i=0; $i<$menus_array[1][4]; $i++){echo "<img src = 'img/chilli.png' class='chilli'>" ;} ?>
-                    <p class = "price">¥<?php echo $menus_array[1][2]; ?>（税込）</p>
+                    <?php for($i=0; $i<$menus_array[1][3]; $i++){echo "<img src = 'img/chilli.png' class='chilli'>" ;} ?>
+                    <p class = "price">¥<?php echo $menus_array[1][1]; ?>（税込）</p>
                     <div class="quantity">
                         <input type ="number" class ="num" value ="0" min="0" name="coffee">
                         <p >個</p>
                     </div>
                 </div>
                 <div class = "menu_curry">
-                    <img src = "<?php echo $menus_array[2][3]; ?>" class = "menu_jpg">
-                    <h4><?php echo $menus_array[2][1]; ?></h4>
-                    <?php for($i=0; $i<$menus_array[2][4]; $i++){echo "<img src = 'img/chilli.png' class='chilli'>" ;} ?>
-                    <p class = "price">¥<?php echo $menus_array[2][2]; ?>税込）</p>
+                    <img src = "<?php echo $menus_array[2][2]; ?>" class = "menu_jpg">
+                    <h4><?php echo $menus_array[2][0]; ?></h4>
+                    <?php for($i=0; $i<$menus_array[2][3]; $i++){echo "<img src = 'img/chilli.png' class='chilli'>" ;} ?>
+                    <p class = "price">¥<?php echo $menus_array[2][1]; ?>税込）</p>
                     <div class="quantity">
                         <input type ="number" class ="num" value ="0" min="0" name="curry">
                         <p >個</p>
                     </div>
                 </div>
                 <div class = "menu_pasta">
-                    <img src = "<?php echo $menus_array[3][3]; ?>" class = "menu_jpg">
-                    <h4><?php echo $menus_array[3][1]; ?></h4>
-                    <?php for($i=0; $i<$menus_array[3][4]; $i++){echo "<img src = 'img/chilli.png' class='chilli'>" ;} ?>
-                    <p class = "price">¥<?php echo $menus_array[3][2]; ?>（税込）</p>
+                    <img src = "<?php echo $menus_array[3][2]; ?>" class = "menu_jpg">
+                    <h4><?php echo $menus_array[3][0]; ?></h4>
+                    <?php for($i=0; $i<$menus_array[3][3]; $i++){echo "<img src = 'img/chilli.png' class='chilli'>" ;} ?>
+                    <p class = "price">¥<?php echo $menus_array[3][1]; ?>（税込）</p>
                     <div class="quantity">
                         <input type ="number" class ="num" value ="0" min="0" name="pasta">
                         <p >個</p>
